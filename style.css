@@ -1,0 +1,107 @@
+.game-card {
+   
+    font-family: 'Open Sans', monospace;
+    font-display: block;
+    block-size: 10% ;
+    text-align:center;
+    border: 1px solid #cecccc; 
+    padding: 25px 10px;             
+    background-color: #f8fafa;
+    border-radius: 20px;     
+    text-align: center;      
+    margin-top: 5%
+}
+
+
+body {
+    background-color: rgb(204, 69, 69);
+    overflow: hidden;
+    margin: auto;
+}
+
+
+.card-body {
+    background-color: rgb(175, 83, 106);
+}
+
+.card-footer {
+    background-color: rgb(175, 83, 106);
+}
+
+.card-header {
+   background-color: rgb(175, 83, 106);
+}
+
+div p {
+   align-items: center;
+   font-family:Comic Sans MS, cursive, sans-serif;
+   font-size: 250%;
+   text-align:center;
+   color: rgb(247, 247, 244);
+}
+
+
+p {
+   align-items: center;
+   font-family:Comic Sans MS, cursive, sans-serif;
+   font-size: 400%;
+   text-align:center;
+   color: rgb(247, 247, 244);
+}
+
+
+#btnEqual {
+   background-color: rgb(147, 201, 142);
+}
+
+#btnLess {
+   background-color: rgb(158, 206, 221);
+}
+
+#btnOver {
+   background-color: rgb(158, 206, 221);
+}
+
+
+#btnRetry {
+    background-color: rgb(147, 201, 142);
+    font-display: block;
+    block-size: 10% ;
+    text-align:center;
+    border: 1px solid #cecccc;
+    padding: 8px 55px;  
+    font-size: 120%;
+    text-align:center;
+    color: rgb(247, 247, 244);
+    align-items: center;
+}
+
+
+
+
+
+
+
+#sticker-container {
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+}
+
+.sticker {
+    position: absolute;
+    width: 120px; 
+    height: 120px;  
+    background-size: cover;
+    border-radius: 15px; 
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    
+}
+
+
+.sticker-1 { background-image: url('https://www.reshot.com/preview-assets/icons/V9P8Y6NDZ4/number-theory-V9P8Y6NDZ4.svg'); }
+.sticker-2 { background-image: url('https://www.reshot.com/preview-assets/icons/CFGL375DEP/replying-to-question-CFGL375DEP.svg'); }
+.sticker-3 { background-image: url('https://www.reshot.com/preview-assets/icons/7L3BPMTH8A/probability-7L3BPMTH8A.svg'); }
+.sticker-4 { background-image: url('https://www.reshot.com/preview-assets/icons/E6D2QHWN7A/speech-bubble-question-E6D2QHWN7A.svg'); }
+
+
