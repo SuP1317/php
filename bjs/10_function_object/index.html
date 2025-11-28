@@ -9,30 +9,53 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
+
+   
+     <button class="btn btn-info" id="btnGeneration">Генерировать</button> 
+     <button class="btn btn-success btn-lg" id="btnCleen">Очистить</button>       
+  
+
 <div class="container">
-    <div class="row game-card align-items-center">
-        <div class="col col-md-6 offset-md-3">
-            <div class="card text-center">
-                <div class="card-header">
-                    <p class="m-0">Окно результатов генерации</p>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="card-title"><span id="surnameOutput">Генерация фамилии</span></h3>
-                            <h4>Имя: <span id="firstNameOutput">Иван</span></h4>
-                            <p>
-                                <span id="genderOutput">Генерация пола</span>
-                                <span>, </span>
-                                <span id="birthYearOutput">Генерация года рождения</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      
+      <div class="col">
+      <h3 class="card-title"><span id="surnameOutput">Иванов</span></h3>
+      <h4> <span id="firstNameOutput">Иван</span></h4>
+      <h4> <span id="patronymicOutput">Иванович</span></h4>
+      </div>
 </div>
+
+
+
+      <div class="person-picture">
+          <img src="https://www.reshot.com/preview-assets/icons/CRUJLP8FZS/middle-eastern-CRUJLP8FZS.svg" alt="Аватар персонажа" class="person-avatar" id="avatarImage">
+      </div>   
+
+
+
+  <div class="person-card">
+    <div class="person-gender">
+        <span id="genderOutput">Генерация пола</span>
+    </div>
+  </div>
+
+      
+
+
+    <div class="person-card">
+            <div class="person-birth"></div>
+            <span id="birthDateOutput">Генерация года рождения</span>
+    </div>
+
+
+          
+     <div class="person-card">
+        <div class="person-profession"></div>
+          <span id="professionOutput">Профессия:</span>
+     </div>
+       
+
+
+
 <script src="personGenerator.js"></script>
 <script src="init.js"></script>
 </body>
