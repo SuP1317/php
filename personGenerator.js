@@ -172,17 +172,60 @@ femaleImagesJson: `{
 
 
 
-randomPatronymic: function() {
-  let patronymic = this.randomValue(this.patronymicJson);
-      if (this.person.gender === this.GENDER_FEMALE && !patronymic.endsWith('на')) {
-        patronymic += 'на';
-    } else {
-          if (!patronymic.endsWith('ич')) {
-            patronymic += 'ич';
-     }
+  
+
+// формирование отчества
+
+randomPatronymic: () => {
+    const maleName = personGenerator.randomValue(personGenerator.firstNameMaleJson);
+    
+    let patronymic;
+    
+    if (maleName === 'Михаил') {
+        patronymic = 'Михайлович';
+    } 
+     else if (maleName === 'Никита') {
+        patronymic = 'Никитич'; 
+        }
+
+     else if (maleName.endsWith('ей')) {
+        patronymic = maleName.slice(0, -2) + 'еевич';
     }
-     return patronymic;
-  },
+
+    else if (maleName.endsWith('ий') || maleName.endsWith('ей')) {
+        patronymic = maleName.slice(0, -2) + 'иевич';
+    }
+    else if (maleName.endsWith('а')) {
+        patronymic = maleName.slice(0, -1) + 'ович';
+    }
+    else if (maleName.endsWith('я')) {
+        patronymic = maleName.slice(0, -1) + 'евич';
+    }
+    else {
+    
+        patronymic = maleName + 'ович';
+    }
+    
+   
+    if (personGenerator.person.gender === personGenerator.GENDER_FEMALE) {
+        if (patronymic.endsWith('ович')) {
+            patronymic = patronymic.replace('ович', 'овна');
+        } 
+        else if (patronymic.endsWith('евич')) {
+            patronymic = patronymic.replace('евич', 'евна');
+        }
+        else if (patronymic.endsWith('ич')) {
+            patronymic = patronymic.replace('ич', 'ична');
+        }
+    }
+    
+    return patronymic;
+},
+
+
+
+
+
 
 
 
